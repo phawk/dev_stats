@@ -15,4 +15,10 @@ RSpec.describe DevStats::Display do
     DISPLAY
     )
   end
+
+  it "keeps count of rendered_lines" do
+    expect(subject.rendered_lines).to eq (0)
+    subject.render(stats)
+    expect(subject.rendered_lines).to eq (7)
+  end
 end

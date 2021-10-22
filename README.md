@@ -4,9 +4,8 @@ CLI to show followers, post views and likes for your dev.to account
 
 TODO:
 
-- Store your API Key, on first run of the system will ask for it.
-- Fetch stats from dev.to
 - Cache last stats
+- Refresh stats on load
 - Show increase in stats from last time
 
 ## Usage
