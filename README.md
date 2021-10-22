@@ -3,10 +3,7 @@
 CLI to show followers, post views and likes for your dev.to account
 
 TODO:
-
-- Cache last stats
-- Refresh stats on load
-- Show increase in stats from last time
+- Show increase in stats from last time (new vs. cached)
 
 ## Usage
 
