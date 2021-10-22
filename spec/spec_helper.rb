@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 require "dev_stats"
+require "dotenv"
+require "webmock/rspec"
+
+Dotenv.load
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
