@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe DevStats::FetchStats do
   it "can fetch stats" do
     stub_api("users/me", { "username" => "bob" })
@@ -8,6 +10,7 @@ RSpec.describe DevStats::FetchStats do
 
     stats = fetcher.latest_stats
 
+    expect(stats.username).to eq("bob")
     expect(stats.reactions).to eq(114)
     expect(stats.comments).to eq(13)
     expect(stats.followers).to eq(32)

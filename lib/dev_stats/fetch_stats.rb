@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 require "net/http"
 require "json"
 
 module DevStats
-  class Stats < Struct.new(:reactions, :comments, :followers); end
   class FetchStats
     def initialize(api_key:)
       @api_key = api_key
@@ -18,7 +19,7 @@ module DevStats
       all_followers = get_json("https://dev.to/api/followers/users?per_page=1000")
       follower_count = all_followers.size
 
-      Stats.new(reactions, comments, follower_count)
+      Stats.new(username, reactions, comments, follower_count)
     end
 
     private
