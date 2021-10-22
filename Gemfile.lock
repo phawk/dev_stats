@@ -3,6 +3,7 @@ PATH
   specs:
     dev_stats (0.1.0)
       terminal-table (~> 3.0.2)
+      thor
 
 GEM
   remote: https://rubygems.org/
@@ -32,6 +33,7 @@ GEM
     rspec-support (3.10.2)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
+    thor (1.1.0)
     unicode-display_width (2.1.0)
     webmock (3.14.0)
       addressable (>= 2.8.0)

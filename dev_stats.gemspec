@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "terminal-table", "~> 3.0.2"
+  spec.add_dependency "thor"
 end

@@ -8,8 +8,17 @@ TODO:
 ## Usage
 
 ```ruby
+# Install
 gem install dev_stats
+
+# Login using your dev.to API key
+devstats auth
+
+# Usage
 devstats
+
+# Logout and erase API key
+devstats logout
 ```
 
 ## Development
