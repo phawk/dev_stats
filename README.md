@@ -2,9 +2,6 @@
 
 CLI to show followers, post views and likes for your dev.to account
 
-TODO:
-- Show increase in stats from last time (new vs. cached)
-
 ## Usage
 
 ```ruby
